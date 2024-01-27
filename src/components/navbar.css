@@ -1,0 +1,51 @@
+*{
+    overflow-x: hidden;
+    margin:0;
+    padding: 0;
+}
+
+p,h1,h2{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navbar styling starts */
+.navbar-logo{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: right;
+}
+
+.nav-left{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar-number{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-phone-logo-right{
+    display: flex;
+    flex-direction: column;
+    
+}
+.navbar-phone-logo-right p{
+    margin-bottom: 0;
+}
+
+.margin-20{
+    margin-left: 20px;
+}
+
+/* Navbar styling ends */
