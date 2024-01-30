@@ -204,3 +204,35 @@ p,h1,h2{
     line-height: 1.25;
     color: #14bef0;
 }
+
+.margin-top-20{
+    margin-top: 20px;
+}
+
+/*  appointment  section  heading starts */
+.find-p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+
+/*  */
+
+.denist-text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.teeth-text{
+    font-size: 14px;
+    color: #414146;
+}
+
+/*  */
+
+.card-testimonial{
+    margin: 0 auto;
+    width: 580px;
+}
