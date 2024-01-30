@@ -3,7 +3,7 @@ import logo from "../Images/logo.jpeg";
 
 import { MdAddCall, MdWatchLater } from "react-icons/md";
 
-import "./navbar.css";
+import "./styles.css";
 
 export const Navbar = () => {
   return (
