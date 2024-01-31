@@ -32,7 +32,9 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 // import required modules
-import { Pagination, Navigation } from "swiper/modules";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+
+// For doctor slider
 
 const responsive = {
   superLargeDesktop: {
@@ -418,44 +420,51 @@ export const Main = () => {
         {/* user swiper starts */}
 
         <section>
-          <p className="text-center">What our users have to say</p>
+          <h3 className="user-text">What our users have to say</h3>
           <div className="container">
             <Swiper
-              slidesPerView={1}
               spaceBetween={30}
-              loop={true}
+              centeredSlides={true}
+              autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+              }}
               pagination={{
                 clickable: true,
               }}
               navigation={true}
-              modules={[Pagination, Navigation]}
+              modules={[Autoplay, Pagination, Navigation]}
               className="mySwiper"
             >
               <SwiperSlide>
-                <div className="card-testimonial">
-                  <p className="text-center">
+                <div className="user-testimonial">
+                  <p className="user-review">
                     Very helpful. Far easier than doing same things on computer.
                     Allows quick and easy search with speedy booking. Even
-                    maintains history of doctors visited
+                    maintains history of doctors visited.
                   </p>
+                  <p className="user-name">Vaibhav Sharma</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="card-testimonial">
-                  <p className="text-center">
-                    Very helpful. Far easier than doing same things on computer.
-                    Allows quick and easy search with speedy booking. Even
-                    maintains history of doctors visited
+                <div className="user-testimonial">
+                  <p className="user-review">
+                    Very good app. Well thought out about
+                    booking/rescheduling/canceling an appointment. Also,
+                    Doctor's feedback mechanism is good and describes all the
+                    basics in a good way.
                   </p>
+                  <p className="user-name">Vikram</p>
                 </div>
               </SwiperSlide>
               <SwiperSlide>
-                <div className="card-testimonial">
-                  <p className="text-center">
-                    Very helpful. Far easier than doing same things on computer.
-                    Allows quick and easy search with speedy booking. Even
-                    maintains history of doctors visited
+                <div className="user-testimonial">
+                  <p className="user-review">
+                    Very easy to book,maintain history. Hassle free from older
+                    versions of booking appointment via telephone.. Thanks
+                    Practo for making it simple.
                   </p>
+                  <p className="user-name">Rahul</p>
                 </div>
               </SwiperSlide>
             </Swiper>
