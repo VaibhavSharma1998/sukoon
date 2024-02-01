@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 // import banner from "../Images/banner-img.jpg";
 import "./styles.css";
 import doctorImg1 from "../Images/doctor-img1.jpeg";
@@ -57,6 +57,14 @@ const responsive = {
 };
 
 export const Main = () => {
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
+
   return (
     <>
       <main>
@@ -71,25 +79,27 @@ export const Main = () => {
                     <p className="text-white quote-text">
                       Find Best doctors in your town at one place
                     </p>
-                    <div className="d-flex">
+                    <form onSubmit={(e) => e.preventDefault()}>
                       <input
                         type="search"
-                        name="Search Location"
-                        id=""
+                        name="location"
+                        value={inputs.location || ""}
+                        onChange={handleChange}
                         placeholder="Search Location"
                         className="input-search"
                       />
                       <input
                         type="search"
-                        name="Search doctors"
-                        id=""
+                        name="doctors"
+                        value={inputs.doctors || ""}
+                        onChange={handleChange}
                         placeholder="Search doctors ..."
                         className="input-search"
                       />
                       <button type="button" className="search">
                         Search
                       </button>
-                    </div>
+                    </form>
                   </div>
                 </div>
               </div>
