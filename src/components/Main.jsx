@@ -300,7 +300,7 @@ export const Main = () => {
         <section className="margin-top-20 ">
           <div className="container">
             <Carousel responsive={responsive}>
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img src={dentist} class="card-img-top img-fluid" alt="..." />
 
@@ -311,7 +311,7 @@ export const Main = () => {
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={gynecologist}
@@ -320,13 +320,13 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Gynecologist</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={dietitian}
@@ -335,13 +335,13 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Dietitian</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={physician}
@@ -350,24 +350,24 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Physician</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img src={surgeon} class="card-img-top img-fluid" alt="..." />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Surgeon</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={orthopedist}
@@ -376,13 +376,13 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Orthopedist</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-div cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={physiotherapist}
@@ -391,13 +391,13 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">Physiotherapist</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
-              <div className="card-main-div">
+              <div className="card-main-di cursor-pointer">
                 <div class="card" style={{ width: "18rem" }}>
                   <img
                     src={pediatrician}
@@ -406,8 +406,8 @@ export const Main = () => {
                   />
 
                   <div class="card-body">
-                    <h6 class="card-title">Instant Video Consulation</h6>
-                    <p class="card-text">Connect within 2 min</p>
+                    <h6 class="denist-text">pediatrician</h6>
+                    <p class="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
@@ -419,7 +419,7 @@ export const Main = () => {
 
         {/* user swiper starts */}
 
-        <section>
+        <section className="margin-top-60">
           <h3 className="user-text">What our users have to say</h3>
           <div className="container">
             <Swiper

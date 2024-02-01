@@ -106,7 +106,8 @@ p,h1,h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 60px;
+    padding-top: 60px;
 }
 
 .sukoon-text{
