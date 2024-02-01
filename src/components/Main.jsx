@@ -57,56 +57,13 @@ const responsive = {
 };
 
 export const Main = () => {
-  const [inputs, setInputs] = useState({});
+  
 
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs((values) => ({ ...values, [name]: value }));
-  };
 
   return (
     <>
       <main>
-        {/* banner starts */}
-        <section>
-          <div className="container">
-            <div className="row">
-              <div className="col-lg-12 ">
-                <div className="banner-hero-style banner-dimensions">
-                  <div className="banner-content">
-                    <h3 className="text-white sukoon-text">Sukoon</h3>
-                    <p className="text-white quote-text">
-                      Find Best doctors in your town at one place
-                    </p>
-                    <form onSubmit={(e) => e.preventDefault()}>
-                      <input
-                        type="search"
-                        name="location"
-                        value={inputs.location || ""}
-                        onChange={handleChange}
-                        placeholder="Search Location"
-                        className="input-search"
-                      />
-                      <input
-                        type="search"
-                        name="doctors"
-                        value={inputs.doctors || ""}
-                        onChange={handleChange}
-                        placeholder="Search doctors ..."
-                        className="input-search"
-                      />
-                      <button type="button" className="search">
-                        Search
-                      </button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        {/* banner ends */}
+        
 
         {/* doctor card starts */}
         <section className="margin-top-60 ">
@@ -114,16 +71,16 @@ export const Main = () => {
             <div className="row">
               <div className="col-lg-3 col-md-4 col-sm-6 cursor-pointer">
                 <div className="card-main-div">
-                  <div class="card" style={{ width: "18rem" }}>
+                  <div className="card" style={{ width: "18rem" }}>
                     <img
                       src={doctorImg1}
-                      class="card-img-top img-fluid"
+                      className="card-img-top img-fluid"
                       alt="..."
                     />
 
-                    <div class="card-body">
-                      <h5 class="card-title">Instant Video Consulation</h5>
-                      <p class="card-text">Connect within 2 min</p>
+                    <div className="card-body">
+                      <h5 className="card-title">Instant Video Consulation</h5>
+                      <p className="card-text">Connect within 2 min</p>
                     </div>
                   </div>
                 </div>
@@ -131,15 +88,15 @@ export const Main = () => {
 
               <div className="col-lg-3 col-md-4 col-sm-6 cursor-pointer">
                 <div className="card-main-div">
-                  <div class="card" style={{ width: "18rem" }}>
+                  <div className="card" style={{ width: "18rem" }}>
                     <img
                       src={doctorImg2}
-                      class="card-img-top img-fluid"
+                      className="card-img-top img-fluid"
                       alt="..."
                     />
-                    <div class="card-body">
-                      <h5 class="card-title">Find Doctors near you</h5>
-                      <p class="card-text">Confirmed appointments</p>
+                    <div className="card-body">
+                      <h5 className="card-title">Find Doctors near you</h5>
+                      <p className="card-text">Confirmed appointments</p>
                     </div>
                   </div>
                 </div>
@@ -147,15 +104,15 @@ export const Main = () => {
 
               <div className="col-lg-3 col-md-4 col-sm-6 cursor-pointer">
                 <div className="card-main-div">
-                  <div class="card" style={{ width: "18rem" }}>
+                  <div className="card" style={{ width: "18rem" }}>
                     <img
                       src={doctorImg3}
-                      class="card-img-top img-fluid"
+                      className="card-img-top img-fluid"
                       alt="..."
                     />
-                    <div class="card-body">
-                      <h5 class="card-title">Surgeries</h5>
-                      <p class="card-text">Safe and trusted surgery centers</p>
+                    <div className="card-body">
+                      <h5 className="card-title">Surgeries</h5>
+                      <p className="card-text">Safe and trusted surgery centers</p>
                     </div>
                   </div>
                 </div>
@@ -163,15 +120,15 @@ export const Main = () => {
 
               <div className="col-lg-3 col-md-4 col-sm-6 cursor-pointer">
                 <div className="card-main-div">
-                  <div class="card" style={{ width: "18rem" }}>
+                  <div className="card" style={{ width: "18rem" }}>
                     <img
                       src={doctorImg4}
-                      class="card-img-top img-fluid"
+                      className="card-img-top img-fluid"
                       alt="..."
                     />
-                    <div class="card-body">
-                      <h5 class="card-title">Treatment</h5>
-                      <p class="card-text">Best treatment in your town</p>
+                    <div className="card-body">
+                      <h5 className="card-title">Treatment</h5>
+                      <p className="card-text">Best treatment in your town</p>
                     </div>
                   </div>
                 </div>
@@ -311,113 +268,113 @@ export const Main = () => {
           <div className="container">
             <Carousel responsive={responsive}>
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
-                  <img src={dentist} class="card-img-top img-fluid" alt="..." />
+                <div className="card" style={{ width: "18rem" }}>
+                  <img src={dentist} className="card-img-top img-fluid" alt="..." />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Dentist</h6>
-                    <p class="teeth-text">Teething troubles? </p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Dentist</h6>
+                    <p className="teeth-text">Teething troubles? </p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={gynecologist}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Gynecologist</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Gynecologist</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={dietitian}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Dietitian</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Dietitian</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={physician}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Physician</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Physician</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
-                  <img src={surgeon} class="card-img-top img-fluid" alt="..." />
+                <div className="card" style={{ width: "18rem" }}>
+                  <img src={surgeon} className="card-img-top img-fluid" alt="..." />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Surgeon</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Surgeon</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={orthopedist}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Orthopedist</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Orthopedist</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-div cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={physiotherapist}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">Physiotherapist</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">Physiotherapist</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>
 
               <div className="card-main-di cursor-pointer">
-                <div class="card" style={{ width: "18rem" }}>
+                <div className="card" style={{ width: "18rem" }}>
                   <img
                     src={pediatrician}
-                    class="card-img-top img-fluid"
+                    className="card-img-top img-fluid"
                     alt="..."
                   />
 
-                  <div class="card-body">
-                    <h6 class="denist-text">pediatrician</h6>
-                    <p class="teeth-text">Connect within 2 min</p>
+                  <div className="card-body">
+                    <h6 className="denist-text">pediatrician</h6>
+                    <p className="teeth-text">Connect within 2 min</p>
                   </div>
                 </div>
               </div>

@@ -9,11 +9,11 @@ export const Navbar = () => {
   return (
     <>
     <header>
-      <nav class="navbar">
-        <div class="container">
+      <nav className="navbar">
+        <div className="container">
           <img src={logo} alt="sukoon" className="logo " />
 
-          <div class="d-flex">
+          <div className="d-flex">
             <div className="nav-left">
               <div className="navbar-number">
                 <MdAddCall size={40} />
@@ -34,10 +34,10 @@ export const Navbar = () => {
         </div>
       </nav>
       {/* navbar 2 start */}
-      <nav class="navbar navbar-expand-lg">
-        <div class="container">
+      <nav className="navbar navbar-expand-lg">
+        <div className="container">
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -45,32 +45,32 @@ export const Navbar = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav border-top">
-              <li class="nav-item">
-                <a class="nav-link active font24" aria-current="page" href="#$">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav border-top">
+              <li className="nav-item">
+                <a className="nav-link active font24" aria-current="page" href="#$">
                   Find Doctors
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link margin-lr-20" href="#$">
+              <li className="nav-item">
+                <a className="nav-link margin-lr-20" href="#$">
                   Video Consult
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link margin-lr-20" href="#$">
+              <li className="nav-item">
+                <a className="nav-link margin-lr-20" href="#$">
                   Medicines
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link margin-lr-20" href="#$">
+              <li className="nav-item">
+                <a className="nav-link margin-lr-20" href="#$">
                   Lab Tests
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link margin-lr-20" href="#$">
+              <li className="nav-item">
+                <a className="nav-link margin-lr-20" href="#$">
                   Surgeries
                 </a>
               </li>
